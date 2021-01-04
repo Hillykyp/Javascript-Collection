@@ -1,0 +1,12 @@
+1. git commit
+2. git --version
+3. cd 
+4. git init - initialize local git repository
+5. git add <file> - add files to index
+6. git status - check status of working tree
+7. git commit - commit changes in index
+
+Remote repositories
+8. git push - Push to remote repository
+9. git pull - pull latest from remote repository
+10. git clone - clone repository into a new directory - your current folder
