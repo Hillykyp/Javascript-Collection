@@ -17,40 +17,43 @@ let name = (params) => {
 
 */
 document.write('<h1>Functions</h1>');
-function sumAdd(num1,num2){
-let r=5;
-let t=7;
-let total = r+t;
-document.write(total);
-} 
-sumAdd(); 
+
+function sumAdd(num1, num2) {
+    let r = 5;
+    let t = 7;
+    let total = r + t;
+    document.write(total);
+}
+sumAdd();
 
 document.write('<br>')
-function multi1(x,y){
-    let m= x*y;
+
+function multi1(x, y) {
+    let m = x * y;
     document.write(m);
 }
-multi1(3,5);
+multi1(3, 5);
 
 document.write('<br>')
-function addNumbers(a,b){
-    var tot= a+b;
+
+function addNumbers(a, b) {
+    var tot = a + b;
     document.write('The total is : ' + tot);
 
 }
-addNumbers(4,2);
- 
+addNumbers(4, 2);
+
 document.write('<br>')
 
 // Arrays in justifyContent: 
 
 let cars = ["Bmw", "Audi", "Benz"];
-cars.push("Lexus","volvo");
+cars.push("Lexus", "volvo");
 let arr1 = new Array("Mango ", 'Banana ', 'Orange ', 'pineapple ', ' Apple ', 'melon');
 arr1.push("Sugarcane");
 // arr1.pop();
 
-for(var i=0; i<arr1.length; i++){
+for (var i = 0; i < arr1.length; i++) {
 
     document.write(arr1[i] + '<br>');
 }
@@ -60,13 +63,13 @@ for(var i=0; i<arr1.length; i++){
 
 
 // Objects
- // Functions found in objects are called methods 
+vfthjhjju // Functions found in objects are called methods 
 let car = {
-    car_brand : "Tesla",
-    car_model : "Model 3",
-    price : 3500,
-     teslaAutoPilot: function(){
-document.write("This car has Auto Pilot ");
+    car_brand: "Tesla",
+    car_model: "Model 3",
+    price: 3500,
+    teslaAutoPilot: function() {
+        document.write("This car has Auto Pilot ");
     }
 
 }
@@ -78,17 +81,17 @@ document.write('<br>');
 // writing objects using function constructor
 // function constructors
 
-function foodb(protein,vitamins,Carbohydrates){
+function foodb(protein, vitamins, Carbohydrates) {
     this.protein = protein;
     this.vitamins = vitamins;
     this.Carbohydrates = Carbohydrates;
-    this.balanceDiet = function(){
+    this.balanceDiet = function() {
         document.write("This food is a balance diet");
     }
 }
-var f1= new foodb("Egg","Cabbage","Maize");
+var f1 = new foodb("Egg", "Cabbage", "Maize");
 
-var f2= new foodb("Mutton","kales","potato");
+var f2 = new foodb("Mutton", "kales", "potato");
 
 f1.balanceDiet();
 document.write('<br>');
@@ -106,7 +109,7 @@ document.write('<br>');
 
 // You can also add properties to the object outside the objectPosition: 
 // use the oject_name.Property_name = "Value_property"
-foodb.minerals ="Liver";
+foodb.minerals = "Liver";
 document.write(foodb.minerals)
 
 
@@ -122,7 +125,7 @@ document.write('<br>');
 
 document.write(car.car_brand);
 document.write('<br>');
-document.write(f1.Carbohydrates+'<br>');
+document.write(f1.Carbohydrates + '<br>');
 
 //Object with properties and methods
 
@@ -130,12 +133,12 @@ var person = {
     firstName: "James",
     lastName: "Bond",
     age: 15,
-    getFullName: function(){
+    getFullName: function() {
         return this.firstName + '  ' + this.lastName;
     }
 
 }
-document.write(person.getFullName()+'<br>');
+document.write(person.getFullName() + '<br>');
 
 // Object constructor
 // use the new keyword 
@@ -146,10 +149,10 @@ person1.lastname = 'Kiplo';
 person1.Age = 25;
 person1['Location'] = 'Kapsokwony';
 
-person1.findFullName = function(){
-    return 'My name is ' + this.firstname + ' ' + this.lastname +' from ' + this.Location + ' I am ' + this.Age + " Years old";
+person1.findFullName = function() {
+    return 'My name is ' + this.firstname + ' ' + this.lastname + ' from ' + this.Location + ' I am ' + this.Age + " Years old";
 }
-document.write(person1.Age +'<br>');
+document.write(person1.Age + '<br>');
 document.write(person1.findFullName());
 
 // if not sure if an object has a property
@@ -158,9 +161,9 @@ document.write(person1.findFullName());
 
 let school = new Object();
 school.primary;
-if(school.hasOwnProperty('primary')){
+if (school.hasOwnProperty('primary')) {
     school.primary;
 }
- 
+
 
 // Dom manipulation and getelementbyId method
