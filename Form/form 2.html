@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation 2</title>
+    <script src="validate 2.js"></script>
+</head>
+
+<body>
+    <form onsubmit="return validate()" action="message.html">
+        <input type="text" id="uname" placeholder="Username">
+        <label id="ibluser" style="color: red; visibility: hidden;">Invalid
+            </label>
+
+        <br><br>
+        <input type="password" id="pass" placeholder="Password"> <br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>

@@ -11,9 +11,9 @@
 
 <body>
     <h2>Form validation</h2>
-    <form action="message.html">
-        <input type="text" id="uname" placeholder="Username" required><br><br>
-        <input type="password" id="pass" placeholder="Password" required> <br><br>
+    <form action="message.html" onsubmit="return validate()">
+        <input type="text" id="uname" placeholder="Username"><br><br>
+        <input type="password" id="pass" placeholder="Password"> <br><br>
         <button type="submit">Submit</button>
     </form>
 </body>
